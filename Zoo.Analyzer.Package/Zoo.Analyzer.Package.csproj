@@ -9,6 +9,7 @@
     <Authors>ondrej-zoo</Authors>
     <Description>A Roslyn analyzer to enforce some good practices in C#</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/ondrej-zoo/Zoo.Analyzer</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeBuildOutput>false</IncludeBuildOutput>
