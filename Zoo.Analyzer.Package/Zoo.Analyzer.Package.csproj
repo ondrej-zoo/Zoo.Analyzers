@@ -7,6 +7,9 @@
     <PackageTags>Roslyn, CSharp, CodeStyle, Analyzers</PackageTags>
     <Version>1.0.2</Version>
     <Authors>ondrej-zoo</Authors>
+    <Description>A Roslyn analyzer to enforce some good practices in C#</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/ondrej-zoo/Zoo.Analyzer</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <DevelopmentDependency>true</DevelopmentDependency>
@@ -14,19 +17,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="$(SolutionDir)\icon.png" Pack="true" PackagePath="" />
-    <None Include="$(SolutionDir)\README.md" Pack="true" PackagePath="" />
+    <None Include="..\icon.png" Pack="true" PackagePath="" />
+    <None Include="..\README.md" Pack="true" PackagePath="" />
+    <None Include="..\LICENSE.txt" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <PropertyGroup>
     <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
-    <Description>A Roslyn analyzer to enforce some good practices in C#</Description>
   </PropertyGroup>
 
   <Target Name="_AddAnalyzersToOutput">
     <ItemGroup>
       <TfmSpecificPackageFile Include="$(OutputPath)\Zoo.Analyzer.dll" PackagePath="analyzers/dotnet/cs" />
-      <!--<TfmSpecificPackageFile Include="D:\Projects\POC\FileScopedNamespaceWithEmptyLineAnalyzer\FileScopedNamespaceWithEmptyLineAnalyzer\FileScopedNamespaceWithEmptyLineAnalyzer\bin\Debug\netstandard2.0\FileScopedNamespaceWithEmptyLineAnalyzer.dll" PackagePath="analyzers/dotnet/cs" />-->
     </ItemGroup>
   </Target>
 
