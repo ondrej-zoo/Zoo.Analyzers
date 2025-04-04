@@ -1,4 +1,4 @@
-﻿namespace FileScopedNamespaceWithEmptyLineAnalyzer;
+﻿namespace Zoo.Analyzers;
 
 internal static class RuleCategory
 {
