@@ -6,3 +6,9 @@
 A Roslyn analyzers to enforce some good practices in C#.
 
 [![Flamingo icons created by Freepik - Flaticon](icon.png)](https://www.flaticon.com/free-icons/flamingo)
+
+## Rules
+
+|Id|Category|Description|Severity|Is enabled|Code fix|
+|--|--------|-----------|:------:|:--------:|:------:|
+|[AZ0001]()|Style|File scoped namespace should be followed by empty line|⚠️|✔️|❌|
