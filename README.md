@@ -11,4 +11,4 @@ A Roslyn analyzers to enforce some good practices in C#.
 
 |Id|Category|Description|Severity|Is enabled|Code fix|
 |--|--------|-----------|:------:|:--------:|:------:|
-|[AZ0001]()|Style|File scoped namespace should be followed by empty line|⚠️|✔️|❌|
+|[AZ0001]()|Style|File-scoped namespace should be followed by an empty line|⚠️|✔️|❌|

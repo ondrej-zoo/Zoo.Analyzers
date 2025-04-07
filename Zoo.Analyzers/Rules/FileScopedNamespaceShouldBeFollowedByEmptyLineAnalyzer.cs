@@ -13,12 +13,11 @@ public class FileScopedNamespaceShouldBeFollowedByEmptyLineAnalyzer : Diagnostic
     private static readonly DiagnosticDescriptor Rule = new(
         id: RuleIdentifier.FileScopedNamespaceShouldBeFollowedByEmptyLine,
         title: "File-scoped namespace should be followed by an empty line",
-        messageFormat: "File-scoped namespace '{0}' should be followed by an empty line",
+        messageFormat: "File-scoped namespace should be followed by an empty line",
         category: RuleCategory.Style,
         defaultSeverity: DiagnosticSeverity.Warning,
         isEnabledByDefault: true,
-        description: "This is description string.",
-        helpLinkUri: $"https://not-implemented/{RuleIdentifier.FileScopedNamespaceShouldBeFollowedByEmptyLine}");
+        helpLinkUri: $"https://github.com/ondrej-zoo/Zoo.Analyzers");
 
     public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Rule);
 
