@@ -17,7 +17,7 @@ public class FileScopedNamespaceShouldBeFollowedByEmptyLineAnalyzer : Diagnostic
         category: RuleCategory.Style,
         defaultSeverity: DiagnosticSeverity.Warning,
         isEnabledByDefault: true,
-        helpLinkUri: $"https://github.com/ondrej-zoo/Zoo.Analyzers");
+        helpLinkUri: "https://github.com/ondrej-zoo/Zoo.Analyzers/docs/AZ0001.md");
 
     public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Rule);
 

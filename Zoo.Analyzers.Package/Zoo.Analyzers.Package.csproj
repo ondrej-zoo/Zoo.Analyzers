@@ -5,7 +5,7 @@
     <PackageId>Zoo.Analyzers</PackageId>
     <PackageIcon>icon.png</PackageIcon>
     <PackageTags>Roslyn, CSharp, CodeStyle, Analyzers</PackageTags>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>ondrej-zoo</Authors>
     <Description>A Roslyn analyzers to enforce some good practices in C#</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
