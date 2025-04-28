@@ -31,15 +31,15 @@ public class FileScopedNamespaceShouldBeFollowedByEmptyLineAnalyzer : Diagnostic
     private void AnalyzeSyntax(SyntaxNodeAnalysisContext context)
     {
         var namespaceDeclaration = (FileScopedNamespaceDeclarationSyntax)context.Node;
-        var classDeclaration = namespaceDeclaration.Members.OfType<ClassDeclarationSyntax>().FirstOrDefault();
+        var baseTypeDeclaration = namespaceDeclaration.Members.OfType<BaseTypeDeclarationSyntax>().FirstOrDefault();
 
-        // If there is no class declaration, then there is no need for an empty line
-        if (classDeclaration is null)
+        // If there is no base type declaration (class, struct, interface, record and enum), then there is no need for an empty line
+        if (baseTypeDeclaration is null)
         {
             return;
         }
 
-        var firstClassLeadingTrivia = classDeclaration.GetLeadingTrivia()
+        var firstClassLeadingTrivia = baseTypeDeclaration.GetLeadingTrivia()
             .FirstOrDefault();
 
         if (firstClassLeadingTrivia.Kind() is not SyntaxKind.EndOfLineTrivia)
